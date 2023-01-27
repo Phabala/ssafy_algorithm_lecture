@@ -21,3 +21,5 @@ int main()
 {
     run(0);
 }
+
+// 이거로 순열 만들기 가능 ( AAAA, AAAB .... ZZZY, ZZZZ)
