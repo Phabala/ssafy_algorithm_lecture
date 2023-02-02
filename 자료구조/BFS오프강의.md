@@ -1,9 +1,11 @@
 ## BFS 를 써야할 경우
+
 DFS는 가중치 그래프, 모든 경로 탐색 등에 좋다.
 BFS는 최소 경로 탐색 등에 좋다. (BFS는 최소 경로를 탐색한 다음에 종료 해버리면 된다.)
 (속도는 똑같다고 보는데, 메모리가 다르다)
 
 ## BFS 인접행렬
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -46,7 +48,9 @@ int main() {
     return 0;
 }
 ```
+
 ## BFS 인접 링크드 리스트
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -76,7 +80,7 @@ int main() {
 
         //2. 연결된거 찾아 큐에 넣기
         for (int i = 0; i < aList[now].size(); i++) {
-            int next = aList[now][i]);
+            int next = aList[now][i];
             q.push(next);
         }
 
@@ -85,7 +89,9 @@ int main() {
     return 0;
 }
 ```
+
 ## 최소 경로 탐색 (레벨, struct, 링크드리스트 활용)
+
 ```cpp
 #include <iostream>
 #include <queue>
@@ -128,3 +134,5 @@ int main() {
     return 0;
 }
 ```
+
+<img src="../images/BFS로%20풀기%20좋은%20문제.png">
