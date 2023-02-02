@@ -77,23 +77,26 @@ int main()
     2 5 <- edge 정보(from, to)
     */
 
-    //    cin >> nodeCnt >> edgeCnt;
-    //    // 1. 인접 행렬
+    cin >> nodeCnt >> edgeCnt;
+    // 1. 인접 행렬
 
-    //    for (int i = 0; i < edgeCnt; i++) {
-    //     int from, to;
-    //     cin >> from >> to;
-    //     adj[from][to] = 1;
-    //    }
-    //    int de = 1;
+    for (int i = 0; i < edgeCnt; i++)
+    {
+        int from, to;
+        cin >> from >> to;
+        adj[from][to] = 1;
+    }
+    int de = 1; // 얘는 뭘까
 
-    //    // 특정 from에서 갈 수 있는 모든 to 찾기
-    //    int node = 1; // 특정 from으로 둘 점
-    //    for (int to = 1; to <= 5; to++) {
-    //     if (adj[node][to] == 0) continue;
-    //     // 갈 수 있는 점이다
-    //     cout << to << " ";
-    //    }
+    // 특정 from에서 갈 수 있는 모든 to 찾기
+    int node = 1; // 특정 from으로 둘 점
+    for (int to = 1; to <= 5; to++)
+    {
+        if (adj[node][to] == 0)
+            continue;
+        // 갈 수 있는 점이다
+        cout << to << " ";
+    }
 
     // -----------------
 
