@@ -10,7 +10,9 @@ int arr[3][3];
 struct Node {
     int y, x;
 };
+
 queue<Node> q;
+
 int directY[4] = { -1, 1, 0, 0 };
 int directX[4] = { 0, 0, 1, -1 };
 
