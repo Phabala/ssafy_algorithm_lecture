@@ -83,7 +83,7 @@ using namespace std;
 struct Edge {
 	int to; // 어디로 향하는 간선이고?
 	int cost; // 가중치
-	bool operator < (Edge next) const {
+	bool operator< (Edge next) const {
 		// 내가 원하는 상황 
 		if (cost < next.cost)
 			return false;
