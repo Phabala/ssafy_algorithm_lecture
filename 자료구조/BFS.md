@@ -1,8 +1,7 @@
 # BFS 의 뜻
 **Breadth First Search, 너비 우선 탐색**
 (DFS: 그래프에서의 완전 탐색)
-<img src=".././images/BFS,%20DFS%20차이.png" alt="BFS, DFS 차이 설명 그림">
-
+<img src=".././images/BFS, DFS 차이.png" alt="BFS, DFS 차이 설명 그림">
 ### 너비 우선 *(가로 방향)* 탐색의 의미
 **특정 노드로부터 인접한 노드 먼저 탐색**
 
