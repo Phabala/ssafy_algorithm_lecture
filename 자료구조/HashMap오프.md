@@ -269,3 +269,72 @@ int main() {
 	um["ABC"].push_back(50);
 }
 ```
+
+**숫자의 좌표 출력**
+나의 풀이
+```cpp
+#include <iostream>
+#include <algorithm>
+#include <map>
+#include <unordered_map>
+#include <string>
+using namespace std;
+
+unordered_map<int, vector<vector<int>>> um;
+
+int main() {
+	um[15] = { {0, 0} };
+	um[11] = { 0, 1 };
+	um[-7] = { 0, 2 };
+
+	um[55] = { 1, 0 };
+	um[-7] = { 1, 1 };
+	um[11] = { 1, 2 };
+
+	um[-7] = { 2, 0 };
+	um[-55] = { 2, 1 };
+	um[-9] = { 2, 2 };
+
+	int de = -1;
+}
+```
+
+강사님 풀이
+```cpp
+#include <iostream>
+#include <algorithm>
+#include <map>
+#include <unordered_map>
+#include <string>
+using namespace std;
+struct Node {
+    int y, x;
+};
+
+unordered_map<int, vector<Node>> um;
+
+int main()
+{
+    int arr[3][3] = {
+        15, 11, -7,
+        55, -7, 11,
+        -7, -55, -9
+    };
+
+    for (int y = 0; y < 3; y++) {
+        for (int x = 0; x < 3; x++) {
+            um[arr[y][x]].push_back({ y, x });
+        }
+    }
+
+    int tar = -7;
+    int n = um[tar].size();
+    for (int i = 0; i < n; i++) {
+        //cout << um[tar][i].y << " , " << um[tar][i].x;
+        Node ret = um[tar][i];
+        cout << ret.y << "," << ret.x << "\n";
+    }
+    
+    return 0;
+}
+```
